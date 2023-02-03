@@ -20,11 +20,7 @@ RUN rc-apps --version
 
 USER root
 WORKDIR /app
-RUN git clone https://github.com/sampaiodiego/rocket.chat.app-poll.git
-RUN git clone https://github.com/croz-ltd/Rocket.Chat.App-Remind.git
-RUN git clone https://github.com/RocketChat/Apps.Jitsi.git
-RUN git clone https://github.com/RocketChat/Apps.ClamAV.git
-
+COPY . .
 WORKDIR /app/rocket.chat.app-poll
 RUN npm i
 WORKDIR /app/Rocket.Chat.App-Remind
@@ -33,5 +29,9 @@ WORKDIR /app/Apps.Jitsi
 RUN npm i
 WORKDIR /app/Apps.ClamAV
 RUN npm i
+#rc-apps deploy --url <url> --username <usr> --password <pw>
 
-#rc-apps deploy --url https://binchat2.workcec.com --username root --password Heatmob123
+WORKDIR /app
+RUN npm i
+CMD [ "node", "index.js" ]
+EXPOSE 5000
