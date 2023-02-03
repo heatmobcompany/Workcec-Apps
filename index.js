@@ -46,6 +46,10 @@ app.listen(PORT, (error) =>{
 const install_app = async (app_path, url, username, password) => {
     console.log(`Installing ${url} - ${app_path}`);
     const installCmd = `cd ${app_path} && rc-apps deploy --url ${url} --username ${username} --password ${password}`
-    let installOutput = child_process.execSync(installCmd).toString()
-    console.log(`Output: \r ${installOutput}`);
+    try {
+        let installOutput = child_process.execSync(installCmd).toString()
+        console.log(`Output: \r ${installOutput}`);    
+    } catch (e){
+        console.log(`Output: App installed fail: ${e}`);
+    }
 }
