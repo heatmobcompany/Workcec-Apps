@@ -1,0 +1,4 @@
+{
+    "cmd_description": "Set a reminder for a member or a channel",
+    "params_example": "Usage: /remind [me or @someone or #channel] [what] [when]"
+}

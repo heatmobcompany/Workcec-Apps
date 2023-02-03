@@ -1,0 +1,18 @@
+{
+    "id": "c33fa1a6-68a7-491e-bf49-9d7b99671c48",
+    "version": "3.1.0",
+    "requiredApiVersion": "^1.19.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "Diego Sampaio",
+        "homepage": "https://github.com/sampaiodiego/rocket.chat.app-poll",
+        "support": "https://github.com/sampaiodiego/rocket.chat.app-poll"
+    },
+    "name": "Poll",
+    "nameSlug": "poll",
+    "classFile": "PollApp.ts",
+    "description": "A simple app to create polls on Rocket.Chat. Use the slash command: /poll [Question?]",
+    "implements": [
+        "IUIKitInteractionHandler"
+    ]
+}

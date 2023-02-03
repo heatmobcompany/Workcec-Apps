@@ -1,0 +1,16 @@
+{
+    "id": "29d6e7df-d111-4b24-835c-c580fe511e2f",
+    "version": "0.0.2",
+    "requiredApiVersion": "1.23.0",
+    "iconFile": "icon.png",
+    "author": {
+        "name": "CROZ",
+        "homepage": "https://github.com/croz-ltd/Rocket.Chat.App-Remind",
+        "support": "https://github.com/croz-ltd/Rocket.Chat.App-Remind"
+    },
+    "name": "Remind Me",
+    "nameSlug": "remind",
+    "classFile": "RemindApp.ts",
+    "description": "A simple app to remind people on Rocket.Chat. Usage: /remind [@someone or #channel] [what] [when]",
+    "implements": []
+}
