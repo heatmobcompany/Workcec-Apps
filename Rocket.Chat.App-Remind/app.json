@@ -1,16 +1,60 @@
 {
-    "id": "29d6e7df-d111-4b24-835c-c580fe511e2f",
-    "version": "0.0.2",
-    "requiredApiVersion": "1.23.0",
+    "id": "7a8cd36b-5f7b-4177-bd7f-bfc9be908bf8",
+    "version": "2.3.0",
+    "requiredApiVersion": "^1.29.1",
     "iconFile": "icon.png",
     "author": {
-        "name": "CROZ",
-        "homepage": "https://github.com/croz-ltd/Rocket.Chat.App-Remind",
-        "support": "https://github.com/croz-ltd/Rocket.Chat.App-Remind"
+        "name": "Murtaza Patrawala",
+        "homepage": "https://addreminders.github.io",
+        "support": "https://addreminders.github.io/contact-us"
     },
-    "name": "Remind Me",
+    "name": "Add Reminder",
     "nameSlug": "remind",
     "classFile": "RemindApp.ts",
-    "description": "A simple app to remind people on Rocket.Chat. Usage: /remind [@someone or #channel] [what] [when]",
-    "implements": []
+    "description": "Remind yourself to do things. Automate reminders for you or your team and keep your work and personal life organized with reminders, right from Rocket.Chat.\nLegal disclaimer: By installing this plugin, you agree to our terms of use and privacy policy and acknowledge that you have read our [terms of use](https://addreminders.github.io/terms-of-use) and [privacy policy](https://addreminders.github.io/privacy-policy).",
+    "implements": [],
+    "permissions": [
+        {
+            "name": "networking"
+        },
+        {
+            "name": "persistence"
+        },
+        {
+            "name": "slashcommand"
+        },
+        {
+            "name": "api"
+        },
+        {
+            "name": "message.write"
+        },
+        {
+            "name": "message.read"
+        },
+        {
+            "name": "room.write"
+        },
+        {
+            "name": "ui.interact"
+        },
+        {
+            "name": "ui.registerButtons"
+        },
+        {
+            "name": "room.read"
+        },
+        {
+            "name": "server-setting.read"
+        },
+        {
+            "name": "user.read"
+        },
+        {
+            "name": "user.write"
+        },
+        {
+            "name": "scheduler"
+        }
+    ]
 }
