@@ -9,7 +9,7 @@ const apps = [
     "Apps.ClamAV",
     "Apps.Jitsi",
     "rocket.chat.app-poll",
-    // "Rocket.Chat.App-Remind",
+    "Rocket.Chat.App-Remind",
 ]
 
 app.use(express.json());
